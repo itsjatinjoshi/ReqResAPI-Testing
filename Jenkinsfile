@@ -19,8 +19,8 @@ pipeline{
             steps {
                 bat '''
                 cd C:\\Project\\ReqResAPI-Testing
-                if not exist venv (
-                    %PYTHON% -m venv rest_api_venv
+                if not exist rest_api_venv (
+                    "%PYTHON%" -m venv rest_api_venv
                 )
                 '''
             }
