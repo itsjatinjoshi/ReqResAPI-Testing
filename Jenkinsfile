@@ -29,7 +29,8 @@ pipeline{
             steps {
                 bat '''
                 cd C:\\Project\\ReqResAPI-Testing
-                call rest_api_venv\\Script\\activate.bat
+                cd rest_api_venv\\Script
+                call activate
 
                 pip install --upgrade pip
                 pip install -r requirements.txt
