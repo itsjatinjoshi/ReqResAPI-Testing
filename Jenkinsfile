@@ -9,6 +9,7 @@ pipeline{
                     git 'https://github.com/itsjatinjoshi/ReqResAPI-Testing.git'
                 ) else (
                     cd ReqResAPI-Testing
+                    git config --global --add safe.directory C:/Project/ReqResAPI-Testing
                     git pull
                 )
                 '''
