@@ -29,7 +29,7 @@ pipeline{
             steps {
                 bat '''
                 cd C:\\Project\\ReqResAPI-Testing
-                cd rest_api_venv\\Script
+                cd rest_api_venv\\Scripts
                 call activate
 
                 pip install --upgrade pip
@@ -42,7 +42,7 @@ pipeline{
             steps {
                 bat '''
                 cd C:\\Project\\ReqResAPI-Testing
-                call rest_api_venv\\Script\\activate.bat
+                call rest_api_venv\\Scripts\\activate.bat
 
                 pytest \\test\\.
                 )
